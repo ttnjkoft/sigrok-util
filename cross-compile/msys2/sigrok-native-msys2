@@ -117,7 +117,7 @@ fi
 # -----------------------------------------------------------------------------
 
 # libusb
-$GIT_CLONE git://github.com/dickens/libusb -b event-abstraction-v4
+$GIT_CLONE https://github.com/uwehermann/libusb -b event-abstraction-v4
 cd libusb
 ./bootstrap.sh
 ./configure $C $L
@@ -137,8 +137,8 @@ make install $V
 cd ../..
 
 # libsigrok
-$GIT_CLONE $REPO_BASE/libsigrok
-cd libsigrok
+$GIT_CLONE https://github.com/ttnjkoft/libsigrok_fx3
+cd libsigrok_fx3
 ./autogen.sh
 mkdir build
 cd build
